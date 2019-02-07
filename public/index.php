@@ -1,5 +1,6 @@
-<?php include_once "../core/autoload.php";
+<?php
 
+include_once "../vendor/autoload.php";
 $router = new \Controller\Router(new \Controller\Request);
 
 $router->add('/dashboard', Controller\Dashboard::class);
