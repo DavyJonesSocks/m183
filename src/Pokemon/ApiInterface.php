@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace App\Pokemon;
 
 class ApiInterface
 {
@@ -19,6 +19,6 @@ class ApiInterface
             $result[$entry->name] = $pokemon;
         }
 
-        return json_encode($result);
+        return $result;
     }
 }
