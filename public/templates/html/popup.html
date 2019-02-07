@@ -1,0 +1,18 @@
+
+<h1>[[ ngDialogData.pokemon.name ]]</h1>
+<div class="popup-img-preview">
+    <img ng-src="[[ ngDialogData.currentImg || ngDialogData.pokemon.sprites.front_default ]]">
+</div>
+
+<span ng-repeat="sprite in ngDialogData.pokemon.sprites" ng-click="ngDialogData.currentImg = sprite">
+    <img src="[[ sprite ]]" height="50">
+</span>
+<h2>Base Stats:</h2>
+<div ng-repeat="stat in ngDialogData.pokemon.stats">
+    <label>[[ stat.stat.name ]]</label>
+    <span>[[ stat.base_stat ]]</span>
+</div>
+<h2>Abilities:</h2>
+<div ng-repeat="ability in ngDialogData.pokemon.abilities">
+    <label>- [[ ability.ability.name ]]</label>
+</div>
