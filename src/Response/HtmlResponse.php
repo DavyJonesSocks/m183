@@ -12,7 +12,6 @@ class HtmlResponse
     {
         $loader = new Twig_Loader_Filesystem(BASEDIR . '/template');
         $twig = new Twig_Environment($loader, [
-            'cache' => BASEDIR . '/var/cache/template',
             'auto_reload' => true,
         ]);
 

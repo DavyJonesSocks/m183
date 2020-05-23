@@ -3,7 +3,9 @@
 namespace App\Core;
 
 use App\Controller\Dashboard;
+use App\Controller\Login;
 use App\Exception\HttpException;
+use App\Model\Import;
 use App\Response\HtmlResponse;
 use App\Router\Router;
 use Exception;
@@ -23,6 +25,7 @@ class App
             $whoops->register();
 
             $router->add('/dashboard', Dashboard::class);
+            $router->add('/login', Login::class);
 
             $url = $_SERVER['REQUEST_URI'];
             $controller = $router->resolve($url);

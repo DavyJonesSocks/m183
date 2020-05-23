@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block title %}Login | {{ parent() }}{% endblock %}
+
+{% block body %}
+
+    <form class="login" method="post" action="/login">
+        <input name="username">
+        <input name="password">
+        <button type="submit">login</button>
+    </form>
+{% endblock %}

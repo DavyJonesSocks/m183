@@ -1,6 +1,17 @@
 {% extends 'base.html.twig' %}
+{% block title %}Dashboard | {{ parent() }}{% endblock %}
+
 {% block header %}
     <header>
-        <!--@TODO -->
+        <menu>
+            <nav>
+                <ul>
+                    <li>Login</li>
+                    <li>Logout</li>
+                    <li>Register</li>
+                    <li>Guestbook</li>
+                </ul>
+            </nav>
+        </menu>
     </header>
 {% endblock %}

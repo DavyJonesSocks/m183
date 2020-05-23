@@ -11,4 +11,9 @@ class Controller
     {
         return new Response;
     }
+
+    protected function getModel()
+    {
+
+    }
 }

@@ -4,10 +4,12 @@
 {% block body %}
     <div class="wrapper" ng-app="PokeApi">
         <div class="dashboard" ng-controller="DashboardCtrl">
-            <div class="pokemon" ng-repeat="pokemon in data" ng-click="showDetails(pokemon)">
-                <img src="[[ pokemon.sprites.front_default ]]">
-                <label ng-bind="pokemon.name"></label>
-            </div>
+            <ul class="navigation">
+                <li><a href="/login">Login</a></li>
+                <li><a href="/logout">Logout</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/guestbook">Guestbook</a></li>
+            </ul>
         </div>
     </div>
 {% endblock %}
